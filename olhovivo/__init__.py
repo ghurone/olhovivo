@@ -1,4 +1,4 @@
-from olhovivo.api import SPTransAPI
+from olhovivo.api import OlhoVivoAPI
 
 """
 OlhoVivoAPI Package
