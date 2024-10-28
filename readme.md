@@ -25,7 +25,7 @@ OlhoVivoAPI é um pacote Python para facilitar a interação com a API Olho Vivo
 from olhovivo import OlhoVivoAPI
 
 # Inicializa a API com tentativas de requisição e tempo de espera
-api = SPTransAPI(n_tries=3, sec_wait=2)
+api = OlhoVivoAPI(n_tries=3, sec_wait=2)
 
 # Exemplo: Buscar uma linha de ônibus
 linhas = api.get_linha("8000")
