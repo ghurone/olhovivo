@@ -16,7 +16,7 @@ class LinhaBase(Base):
         terminal_secundario (str): Nome do terminal secundário da linha.
         nome (str): Nome da linha no sentido especificado.
     """
-    
+
     _mapping = {
         'codigo': 'cl',
         'circular': 'lc',
@@ -36,7 +36,7 @@ class LinhaBase(Base):
 
     def __repr__(self) -> str:
         return self.__str__()
-    
+
 
 class Linha(LinhaBase):
     """
@@ -44,13 +44,13 @@ class Linha(LinhaBase):
 
     Attributes:
         Todos os atributos de LinhaBase.
-        
+
         saida (str): Letreiro de destino da linha.
         chegada (str): Letreiro de origem da linha.
         quantidade_veiculos (int): Quantidade de veículos localizados.
         _veiculos (list[dict]): Lista de dicionários com dados dos veículos.
     """
-    
+
     _mapping = LinhaBase._mapping.copy()
     _mapping.update({
         '_numero_modo': 'c',

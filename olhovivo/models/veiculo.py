@@ -12,7 +12,7 @@ class Veiculo(Base):
         latitude (float): Latitude da posição do veículo.
         longitude (float): Longitude da posição do veículo.
     """
-    
+
     _mapping = {
         'prefixo': 'p',
         'acessibilidade': 'a',

@@ -13,7 +13,7 @@ class ParadaBase(Base):
         latitude (float): Latitude da parada.
         longitude (float): Longitude da parada.
     """
-    
+
     _mapping = {
         'codigo': 'cp',
         'nome': 'np',
@@ -27,7 +27,7 @@ class ParadaBase(Base):
 
     def __repr__(self) -> str:
         return self.__str__()
-    
+
 
 class Parada(ParadaBase):
     """
@@ -37,14 +37,14 @@ class Parada(ParadaBase):
         Todos os atributos de ParadaBase.
         _veiculos (list[dict]): Lista de dicionários com dados dos veículos na parada.
     """
-    
+
     _mapping = ParadaBase._mapping.copy()
     _mapping.update({
         '_veiculos': 'vs',
     })
-    
+
     def __init__(self, kwargs):
         super().__init__(kwargs)
-    
+
     def get_veiculos(self) -> list[Veiculo]:
         return [Veiculo(veiculo) for veiculo in self._veiculos]

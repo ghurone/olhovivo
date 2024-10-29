@@ -1,5 +1,4 @@
 from setuptools import setup, find_packages
-
 setup(
     name='olhovivo',
     version='0.1.2',
