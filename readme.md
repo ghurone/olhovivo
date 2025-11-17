@@ -12,7 +12,7 @@ OlhoVivoAPI é um pacote Python para facilitar a interação com a API Olho Vivo
 
 1. Clone este repositório:
    ```bash
-    git clone https://github.com/ghurone/olhovivoapi.git
+    git clone https://github.com/ghurone/olhovivo.git
     ```
 2. Instale as dependencias:
     ```bash
